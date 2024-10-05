@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+:root {
+    font-size: 16px;
+    font-family: 'Roboto';
+    --text-primary: #b6b6b6;
+    --text-secondary: #ff7a7a;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --transition-speed: 600ms;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #272727;
+}
+
+.navbar {
+    padding: 0px;
+    position: fixed;
+    background-color: var(--bg-primary);
+    transition: width 600ms ease;
+    overflow: scroll;
+    z-index: 2;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-link {
+    color: #ff7a7a;
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: var(--transition-speed);
+}
+
+.navlink {
+    color: #ff7a7a;
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: var(--transition-speed);
+}
+
+.nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+
+.link-text {
+    display: none;
+    margin-left: 1rem;
+}
+
+.nav-link img {
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.fa-primary {
+    color: #7efbff;
+}
+
+.fa-secondary {
+    color: #49c9df;
+}
+
+.fa-primary,
+.fa-secondary {
+    transition: var(--transition-speed);
+}
+
+.logo {
+    font-weight: bold;
+    /*text-transform: uppercase;*/
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    font-size: 1.5rem;
+    letter-spacing: 0.3ch;
+    width: 100%;
+}
+
+.logo img {
+    transform: translateX();
+    transition: var(--transition-speed);
+}
+
+.logo-text {
+    display: inline;
+    position: absolute;
+    left: -999px;
+    transition: var(--transition-speed);
+}
+
+.navbar:hover .logo img {
+    transform: translateX(160px);
+    transition: var(--transition-speed);
+}
+
+.fixed {
+    background-repeat: repeat;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+.fixed2 {
+    height: 500px;
+    width: auto;
+    background-image: url(../images/graphic/graphic1.gif);
+    background-size: auto;
+    background-color: #3c3c46;
+    display: flex;
+    justify-content: center;
+}
+
+.navicons {
+    height: 55px;
+    margin: 10px;
+}
+
+#headbox1 {
+    height: 750px;
+    width: 100%;
+    background-color: rgb(133, 133, 133);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0)), url(Images/James\ Webb\ Telescope.jpg);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#headbox2 {
+    height: 750px;
+    width: 100%;
+    background-color: rgb(133, 133, 133);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0)), url(Images/3D-\ Model.jpg);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#headbox3 {
+    height: 750px;
+    width: 100%;
+    background-color: rgb(133, 133, 133);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0)), url(Images/Ariane\ 5.jpg);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#headbox4 {
+    height: 750px;
+    width: 100%;
+    background-color: rgb(133, 133, 133);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0)), url(Images/JWSTDiscovery/1.jpg);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#pagetitle {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    font-size: 5.7em;
+    margin: 30px;
+    color: aliceblue;
+}
+
+.paragraph {
+    margin: 30px;
+}
+
+#i {
+    height: 200vh;
+}
+
+.vidbox {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.paragraph {
+    color: white;
+}
+
+.vid {
+    aspect-ratio: 16/9;
+    height: 85%;
+}
+
+main {
+    width: 93.5%;
+    margin: 0px;
+}
+
+.threedheadbox {
+    width: 100%;
+    height: 25vh;
+}
+
+
+.threedhead {
+    color: rgb(255, 255, 255);
+    font-size: 4em;
+    margin: 10px;
+}
+
+.threednavbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 500px;
+    height: 50px;
+}
+
+.subnavlinks {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    padding-left: 70px;
+    padding-right: 70px;
+    border-radius: 5px;
+}
+
+#threedl1 {
+    background-image: linear-gradient(rgb(33, 33, 33), rgb(0, 0, 0));
+    border-bottom: 0px;
+}
+
+#threedl2 {
+    background-color: rgb(78, 78, 78);
+    border: solid, 2px, rgb(95, 95, 95);
+}
+
+#threedmodelbox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.gallerybox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.galleryphoto {
+    margin: 50px;
+    width: 500px;
+}
+
+.photoinfo {
+    margin: 50px;
+    color: wheat;
+}
+
+.footer {
+    height: 25vh;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navarrows {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.arrow {
+    height: 32px;
+}
+
+.navarrows:hover {
+    font-size: 1.3em;
+}
+
+.navarrows:active {
+    color: gray;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Content Section Styles */
+.content-section {
+    padding: 50px 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.content-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Section Descriptions */
+.section-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* About Us Section Styles */
+.about-us-section {
+    background-color: rgb(55, 55, 55);
+}
+
+.about-us-title {
+    color: #ffffff;
+}
+
+.about-us-email {
+    color: #707070;
+    text-decoration: underline;
+}
+
+.about-us-email:hover {
+    color: #ffcc00;
+}
+
+/* Resources Section Styles */
+.resources-section {
+    background-color: #000000;
+}
+
+.resources-title {
+    color: #0077cc;
+}
+
+.resources-description {
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+/* Resources List */
+.resources-list {
+    list-style: none;
+    padding: 0;
+}
+
+.resources-item {
+    margin: 10px 0;
+}
+
+.resources-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: #0077cc;
+    border: 2px solid #0077cc;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.resources-link:hover {
+    background-color: #0077cc;
+    color: white;
+}
+
+/* Footer Styles */
+.site-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-text {
+    font-size: 14px;
+}
+
+/* Small screens */
+@media only screen and (max-width: 750px) {
+
+
+    .navbar {
+        padding: 0px 0px 0px 0px;
+        bottom: 0;
+        width: 100%;
+        height: 6.1rem;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .nav-link {
+        justify-content: center;
+    }
+
+    main {
+        margin: 0;
+    }
+
+    .fixed1 {
+        height: 150px;
+        background-image: url('../images/map.png');
+        background-size: 400px;
+    }
+}
+
+
+
+/* Large screens */
+@media only screen and (min-width: 750px) {
+    .navbar {
+        top: 0;
+        width: 6.1rem;
+        height: 100vh;
+    }
+
+    .navbar:hover {
+        width: 16rem;
+    }
+
+    .navbar:hover .link-text {
+        display: inline;
+    }
+
+    .navbar:hover .logo svg {
+        margin-left: 11rem;
+    }
+
+    .navbar:hover .logo-text {
+        left: 0px;
+    }
+
+    .fixed1 {
+        height: 300px;
+        background-image: url('../images/map.png');
+        background-size: contain;
+    }
+
+    main {
+        margin-left: 100px;
+        margin-right: 0px;
+    }
+}
